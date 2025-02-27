@@ -73,8 +73,13 @@ If you cloned this repository and need to set up ShadCN UI,
    ```bash
    npx shadcn init  
 
-To install new ShadCN UI components,
-2. Add new components
+To install new ShadCN UI components, 
+
+2. Add new components 
 
    ```bash
-   npx shadcn add <component-name>  
+   npx shadcn add <component-name>
+
+3. Ensure Tailwind and dependencies are properly configured.
+
+If you run into issues with ShadCN, check the official documentation for troubleshooting.
