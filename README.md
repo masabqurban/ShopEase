@@ -79,6 +79,6 @@ To install new ShadCN UI components,
    ```bash
    npx shadcn add <component-name>  
    
-3. Ensure Tailwind and dependencies are properly configured.
+<!-- 3. Ensure Tailwind and dependencies are properly configured.
 
-If you run into issues with ShadCN, check the official documentation for troubleshooting.
+If you run into issues with ShadCN, check the official documentation for troubleshooting. -->
