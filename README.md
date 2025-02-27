@@ -5,7 +5,7 @@ Hello everyone!
 Welcome to ShopEase, an E-commerce platform and your go-to destination for a seamless online shopping experience. Experience hassle-free shopping with ShopEase, where quality meets convenience. Discover a wide range of products and enjoy a user-friendly platform designed to make your shopping journey smooth and enjoyable.
 
 ### Project Status: 🚀  
-- **Project Created:** 26/02/2025    
+- **Project Created:** 28/02/2025    
 <!-- - **Live Release Date:** 26/02/2025   -->
 
 **Tech Stack used:**  
@@ -67,22 +67,23 @@ If you encounter issues while running the project, ensure that:
 ## ShadCN Components
 This project uses ShadCN UI components. If you need to add new components or reinitialize the setup, follow these steps:
 
-1. Initialize ShadCN (if missing)
 If you cloned this repository and need to set up ShadCN UI, run:
+1. Initialize ShadCN (if missing)
 
    ```bash
    npx shadcn init  
 
-2. Add new components
 To install new ShadCN UI components, use:
+2. Add new components
 
    ```bash
    npx shadcn add <component-name>  
-Example:
+   
+3. Example:
 
    ```bash
    npx shadcn add button  
 
-3. Ensure Tailwind and dependencies are properly configured.
+4. Ensure Tailwind and dependencies are properly configured.
 
 If you run into issues with ShadCN, check the official documentation for troubleshooting.
