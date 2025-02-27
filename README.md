@@ -67,23 +67,18 @@ If you encounter issues while running the project, ensure that:
 ## ShadCN Components
 This project uses ShadCN UI components. If you need to add new components or reinitialize the setup, follow these steps:
 
-If you cloned this repository and need to set up ShadCN UI, run:
+If you cloned this repository and need to set up ShadCN UI,
 1. Initialize ShadCN (if missing)
 
    ```bash
    npx shadcn init  
 
-To install new ShadCN UI components, use:
+To install new ShadCN UI components,
 2. Add new components
 
    ```bash
-   npx shadcn add <component-name>  
+   npx shadcn add component-name  
    
-3. Example:
-
-   ```bash
-   npx shadcn add button  
-
-4. Ensure Tailwind and dependencies are properly configured.
+3. Ensure Tailwind and dependencies are properly configured.
 
 If you run into issues with ShadCN, check the official documentation for troubleshooting.
