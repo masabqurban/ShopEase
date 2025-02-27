@@ -12,7 +12,8 @@ Welcome to ShopEase, an E-commerce platform and your go-to destination for a sea
 - Next JS  
 - TypeScript  
 - Tailwind CSS  
-- Lucide Icons  
+- Lucide Icons
+- ShadCN UI Components 
 - Vercel  
 <!-- 
 Website Link:  
