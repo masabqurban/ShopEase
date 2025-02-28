@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FC } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Select,
@@ -10,10 +9,6 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Slider } from '@/components/ui/slider';
-
-interface CategoryPageProps {
-  params: { category: string };
-}
 
 // This would typically come from your database based on the category
 const products = [
@@ -56,7 +51,7 @@ const products = [
 ];
 
 // This generates all possible category paths at build time
-export async function generateStaticParams(): Promise<{ category: string }[]> {
+export function generateStaticParams() {
   return [
     { category: 'electronics' },
     { category: 'fashion' },
@@ -67,17 +62,15 @@ export async function generateStaticParams(): Promise<{ category: string }[]> {
   ];
 }
 
-const CategoryPage: FC<CategoryPageProps> = ({ params }) => {
-  const categoryName = params.category
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+export default function CategoryPage({ params }: { params: { category: string } }) {
+  const categoryName = params.category.split('-').map(word => 
+    word.charAt(0).toUpperCase() + word.slice(1)
+  ).join(' ');
 
-  // Filter products by category (case insensitive)
-  const categoryProducts = products.filter(product =>
-    product.category.toLowerCase() === params.category.toLowerCase()
+  // Filter products by category
+  const categoryProducts = products.filter(product => 
+    product.category === params.category
   );
-
 
   return (
     <div className="bg-background min-h-screen py-12">
