@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { ShoppingCart, Menu, X, Search, ShoppingBag } from 'lucide-react';
+import { usePathname } from  'next/navigation';
+import { ShoppingCart, Menu, X, Search, ShoppingBag, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -60,9 +60,14 @@ const Navbar = () => {
                 <ShoppingCart className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/login">
+            <Link href="/auth/login">
               <Button variant="outline" size="sm">
                 Login
+              </Button>
+            </Link>
+            <Link href="/account">
+              <Button variant="ghost" size="icon">
+                <User className="h-5 w-5" />
               </Button>
             </Link>
           </div>
@@ -70,6 +75,11 @@ const Navbar = () => {
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
             <ThemeToggle />
+            <Link href="/cart">
+              <Button variant="ghost" size="icon">
+                <ShoppingCart className="h-5 w-5" />
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -99,14 +109,14 @@ const Navbar = () => {
               />
             </div>
             <div className="px-3 py-2 flex space-x-2">
-              <Link href="/login" className="w-full">
+              <Link href="/auth/login" className="w-full">
                 <Button className="w-full" variant="outline">
                   Login
                 </Button>
               </Link>
-              <Link href="/cart" className="w-full">
+              <Link href="/account" className="w-full">
                 <Button className="w-full">
-                  Cart
+                  Account
                 </Button>
               </Link>
             </div>
