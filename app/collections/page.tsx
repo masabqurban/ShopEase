@@ -9,42 +9,42 @@ const categories = [
     name: 'Electronics',
     image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=1200&auto=format&fit=crop',
     description: 'Latest gadgets and electronic devices',
-    productCount: 24
+    productCount: 5
   },
   {
     id: 'fashion',
     name: 'Fashion',
     image: 'https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=1200&auto=format&fit=crop',
     description: 'Trendy clothing and accessories',
-    productCount: 36
+    productCount: 5
   },
   {
     id: 'home-living',
     name: 'Home & Living',
     image: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop',
     description: 'Beautiful home decor and furniture',
-    productCount: 28
+    productCount: 5
   },
   {
     id: 'beauty',
     name: 'Beauty',
     image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=1200&auto=format&fit=crop',
     description: 'Cosmetics and personal care',
-    productCount: 42
+    productCount: 5
   },
   {
     id: 'sports',
     name: 'Sports & Fitness',
     image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop',
     description: 'Sports equipment and fitness gear',
-    productCount: 31
+    productCount: 5
   },
   {
     id: 'books',
     name: 'Books & Media',
     image: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop',
     description: 'Books, movies, and music',
-    productCount: 45
+    productCount: 5
   }
 ];
 
